@@ -1,9 +1,8 @@
 /**
- * @Author: Jakub Pudelek, Plumbee Ltd
  */
-package Operators {
-public class Divide implements Operator {
-    public function Divide(... args) {
+package Models.Operators {
+public class Multiply implements Operator {
+    public function Multiply(args:Array) {
         for (var i:int = 0;i < args.length;i++)
             this.args.push(args[i]);
     }
@@ -15,7 +14,7 @@ public class Divide implements Operator {
         if (args.length > 0)
             r = args[i].Execute();
         for (var i:int = 1;i < args.length;i++)
-            r /= args[i].Execute();
+            r *= args[i].Execute();
         return r;
     }
 }

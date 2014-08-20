@@ -1,8 +1,8 @@
 /**
  */
-package Operators {
+package Models.Operators {
 public class Plus implements Operator {
-    public function Plus(... args) {
+    public function Plus(args:Array) {
         for (var i:int = 0;i < args.length;i++)
             this.args.push(args[i]);
     }
@@ -11,7 +11,9 @@ public class Plus implements Operator {
 
     public function Execute():Number {
         var r:Number = 0;
-        for (var i:int = 0;i < args.length;i++)
+        if (args.length > 0)
+            r = args[i].Execute();
+        for (var i:int = 1;i < args.length;i++)
             r += args[i].Execute();
         return r;
     }

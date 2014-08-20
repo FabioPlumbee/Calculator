@@ -2,13 +2,9 @@
  * @Author: Jakub Pudelek, Plumbee Ltd
  */
 package {
-import Operators.Divide;
-import Operators.Minus;
-import Operators.Multiply;
-import Operators.Numeric;
-import Operators.Operator;
-import Operators.Plus;
-import Operators.SqrRt;
+import Models.Operators.Operator;
+import Models.Operators.OperatorFactory;
+import Models.Operators.SqrRt;
 
 import org.flexunit.asserts.assertEquals;
 
@@ -28,28 +24,57 @@ public class CalculatorTest {
 
     }
 
+    [Test]
+    public function testPlus():void {
+        var n1:Operator = OperatorFactory.createNumber(7);
+        var n2:Operator = OperatorFactory.createNumber(4);
+        var op:Operator = OperatorFactory.createOperator(OperatorFactory.PLUS,n1,n2);
+
+        assertEquals(11,op.Execute());
+    }
 
     [Test]
-    public function testName():void {
-        var n1:Operator = new Numeric(7);
-        assertEquals(n1.Execute(),7);
-        var n2:Operator = new Numeric(4);
+    public function testMinus():void {
+        var n1:Operator = OperatorFactory.createNumber(7);
+        var n2:Operator = OperatorFactory.createNumber(4);
+        var op:Operator = OperatorFactory.createOperator(OperatorFactory.MINUS,n1,n2);
 
-        var plustest:Operator = new Plus(n1,n2);
-        var minustest:Operator = new Minus(n1,n2);
-        var multtest:Operator = new Multiply(plustest,minustest);
-        var n3:Operator = new Numeric(plustest.Execute());
-        var divtest:Operator = new Divide(n3,multtest);
+        assertEquals(3,op.Execute());
+    }
 
-        assertEquals(11,plustest.Execute());
-        assertEquals(3,minustest.Execute());
-        assertEquals(33,multtest.Execute());
-        assertEquals(1/3,divtest.Execute());
+    [Test]
+    public function testMultiply():void {
+        var n1:Operator = OperatorFactory.createNumber(7);
+        var n2:Operator = OperatorFactory.createNumber(4);
+        var op:Operator = OperatorFactory.createOperator(OperatorFactory.MULTIPLY,n1,n2);
+
+        assertEquals(28,op.Execute());
+    }
+
+    [Test]
+    public function testDivide():void {
+        var n1:Operator = OperatorFactory.createNumber(7);
+        var n2:Operator = OperatorFactory.createNumber(4);
+        var op:Operator = OperatorFactory.createOperator(OperatorFactory.DIVIDE,n1,n2);
+
+        assertEquals(7/4,op.Execute());
+    }
+
+    [Test]
+    public function testMixed():void {
+        var n1:Operator = OperatorFactory.createNumber(7);
+        var n2:Operator = OperatorFactory.createNumber(4);
+        var op1:Operator = OperatorFactory.createOperator(OperatorFactory.MULTIPLY,n1,n2);
+        var op2:Operator = OperatorFactory.createOperator(OperatorFactory.PLUS,op1,n2);
+        var op3:Operator = OperatorFactory.createOperator(OperatorFactory.DIVIDE,n2,op2);
+        var ope:Operator = OperatorFactory.createOperator(OperatorFactory.EQUALS,op3);
+
+        assertEquals(1/8,ope.Execute());
     }
 
     [Test]
     public function testSqrtRoot():void {
-        var n1:Operator = new Numeric(10);
+        var n1:Operator = OperatorFactory.createNumber(10);
         var srt:Operator = new SqrRt(n1);
 
         assertEquals(Math.sqrt(10),srt.Execute());

@@ -1,7 +1,7 @@
 /**
  * @Author: Jakub Pudelek, Plumbee Ltd
  */
-package Operators {
+package Models.Operators {
 public interface Operator {
     function Execute():Number;
 }

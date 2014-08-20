@@ -1,6 +1,6 @@
 /**
  */
-package Operators {
+package Models.Operators {
 public class Numeric implements Operator {
     private var val:Number;
 

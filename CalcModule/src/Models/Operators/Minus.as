@@ -1,9 +1,9 @@
 /**
  * @Author: Jakub Pudelek, Plumbee Ltd
  */
-package Operators {
+package Models.Operators {
 public class Minus implements Operator {
-    public function Minus(... args) {
+    public function Minus(args:Array) {
         for (var i:int = 0;i < args.length;i++)
             this.args.push(args[i]);
     }

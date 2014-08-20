@@ -8,6 +8,9 @@
             <entry library-id="b8a1df18-0184-4b5d-9dfd-c640aabce13f">
               <dependency linkage="Test" />
             </entry>
+            <entry library-id="36d59eb7-132c-4315-9f39-d52ad1c9fb42">
+              <dependency linkage="External" />
+            </entry>
           </entries>
           <sdk name="flex_sdk_4" />
         </dependencies>
@@ -32,6 +35,16 @@
         <properties id="b8a1df18-0184-4b5d-9dfd-c640aabce13f" />
         <CLASSES>
           <root url="jar://$USER_HOME$/Desktop/flexunit-4.2.0-20140410-as3_4.12.0.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="36d59eb7-132c-4315-9f39-d52ad1c9fb42" />
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Desktop/robotlegs-framework-v2/bin/robotlegs-framework-v2.2.1.swc!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
