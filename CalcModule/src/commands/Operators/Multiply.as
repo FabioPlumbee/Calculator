@@ -1,6 +1,6 @@
 /**
  */
-package Models.Operators {
+package Commands.Operators {
 public class Multiply implements Operator {
     public function Multiply(args:Array) {
         for (var i:int = 0;i < args.length;i++)

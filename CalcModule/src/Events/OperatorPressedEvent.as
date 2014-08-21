@@ -1,5 +1,5 @@
 /**
- * @Author: Jakub Pudelek, Plumbee Ltd
+ * @Author: Fabio Barata, Plumbee Ltd
  */
 package Events {
 import flash.events.Event;
@@ -13,6 +13,11 @@ public class OperatorPressedEvent extends Event {
 
     public function OperatorPressedEvent(type:String) {
         super(type);
+    }
+
+    override public function clone() : Event
+    {
+        return new OperatorPressedEvent(type);
     }
 }
 }

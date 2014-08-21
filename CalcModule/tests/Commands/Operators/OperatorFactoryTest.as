@@ -1,7 +1,7 @@
 /**
- * @Author: Jakub Pudelek, Plumbee Ltd
+ * @Author: Fabio Barata, Plumbee Ltd
  */
-package Models.Operators {
+package Commands.Operators {
 
 import org.flexunit.asserts.assertTrue;
 
@@ -38,6 +38,7 @@ public class OperatorFactoryTest {
         var n2:Operator = OperatorFactory.createNumber(0);
         assertTrue(OperatorFactory.createOperator(OperatorFactory.DIVIDE,n1,n2) is Divide);
     }
+
     [Test]
     public function testEquals() {
         assertTrue(OperatorFactory.createOperator(OperatorFactory.EQUALS,OperatorFactory.createNumber(0)) is Equals);

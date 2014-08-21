@@ -1,7 +1,7 @@
 /**
- * @Author: Jakub Pudelek, Plumbee Ltd
+ * @Author: Fabio Barata, Plumbee Ltd
  */
-package Models.Operators {
+package Commands.Operators {
 public class SqrRt implements Operator {
     var val:Operator = null;
 

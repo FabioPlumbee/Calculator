@@ -1,7 +1,7 @@
 /**
  * Created by fabio on 18/08/2014.
  */
-package {
+package Views {
 import flash.display.Sprite;
 import flash.events.Event;
 import flash.events.MouseEvent;

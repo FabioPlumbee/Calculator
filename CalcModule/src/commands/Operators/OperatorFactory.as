@@ -1,6 +1,6 @@
 /**
  */
-package Models.Operators {
+package Commands.Operators {
 public class OperatorFactory {
     public static const PLUS:int = 1;
     public static const MINUS:int = 2;

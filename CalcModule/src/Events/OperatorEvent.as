@@ -1,5 +1,5 @@
 /**
- * @Author: Jakub Pudelek, Plumbee Ltd
+ * @Author: Fabio Barata, Plumbee Ltd
  */
 package Events {
 import flash.events.Event;
@@ -16,6 +16,11 @@ public class OperatorEvent extends Event {
 
     public function get op():int {
         return _op;
+    }
+
+    override public function clone() : Event
+    {
+        return new OperatorEvent(_op);
     }
 }
 }

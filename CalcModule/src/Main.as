@@ -4,8 +4,6 @@ import Views.Calculator;
 
 import flash.display.Sprite;
 
-import robotlegs.bender.framework.impl.Context;
-
 public class Main extends Sprite {
     public function Main() {
         var button:Button = new Button(50,50);
@@ -17,6 +15,7 @@ public class Main extends Sprite {
         var calc:Calculator = new Calculator();
         calc.x = 200;
         calc.y = 0;
+
         this.addChild(calc);
     }
 }

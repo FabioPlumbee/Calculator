@@ -1,6 +1,6 @@
 /**
  */
-package Models.Operators {
+package Commands.Operators {
 public class Equals implements Operator {
     private var val:Operator;
 

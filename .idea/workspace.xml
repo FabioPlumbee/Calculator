@@ -2,30 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aeea967-ba5f-4278-9e35-85c5ac161deb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Views/Calculator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Contexts/CalculatorContext.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Commands/NumberCommand.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Events/NumberEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Commands/OperatorController.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Events/OperatorEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Models/Operators/OperatorFactory.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/tests/Models/Operators/OperatorFactoryTest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Mediators/OperatorMediator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Models/OperatorModel.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Events/OperatorPressedEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Events/UpdateTextEvent.as" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CalcModule/src/Calculator.as" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CalcModule/src/Operators/Divide.as" afterPath="$PROJECT_DIR$/CalcModule/src/Models/Operators/Divide.as" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CalcModule/src/Operators/Equals.as" afterPath="$PROJECT_DIR$/CalcModule/src/Models/Operators/Equals.as" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CalcModule/src/Operators/Minus.as" afterPath="$PROJECT_DIR$/CalcModule/src/Models/Operators/Minus.as" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CalcModule/src/Operators/Multiply.as" afterPath="$PROJECT_DIR$/CalcModule/src/Models/Operators/Multiply.as" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CalcModule/src/Operators/Numeric.as" afterPath="$PROJECT_DIR$/CalcModule/src/Models/Operators/Numeric.as" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CalcModule/src/Operators/Operator.as" afterPath="$PROJECT_DIR$/CalcModule/src/Models/Operators/Operator.as" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CalcModule/src/Operators/Plus.as" afterPath="$PROJECT_DIR$/CalcModule/src/Models/Operators/Plus.as" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CalcModule/src/Operators/SqrRt.as" afterPath="$PROJECT_DIR$/CalcModule/src/Models/Operators/SqrRt.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Views/CalcTextView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Contexts/CalculatorConfig.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Views/ICalcTextView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Views/INumbersView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Views/IOperatorsView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Mediators/NumberMediator.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Events/NumberPressedEvent.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Views/NumbersView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Views/OperatorsView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CalcModule/src/Mediators/TextMediator.as" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CalcModule/src/Models/Operators/Divide.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CalcModule/src/Models/Operators/Minus.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CalcModule/src/Models/Operators/Operator.as" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CalcModule/src/Models/Operators/SqrRt.as" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CalcModule/src/Models/OperatorModel.as" afterPath="$PROJECT_DIR$/CalcModule/src/Models/CalculatorModel.as" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CalcModule/src/Models/Operators/Equals.as" afterPath="$PROJECT_DIR$/CalcModule/src/Commands/Operators/Equals.as" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CalcModule/src/Models/Operators/Multiply.as" afterPath="$PROJECT_DIR$/CalcModule/src/Commands/Operators/Multiply.as" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CalcModule/src/Models/Operators/Numeric.as" afterPath="$PROJECT_DIR$/CalcModule/src/Commands/Operators/Numeric.as" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CalcModule/src/Models/Operators/OperatorFactory.as" afterPath="$PROJECT_DIR$/CalcModule/src/Commands/Operators/OperatorFactory.as" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CalcModule/src/Models/Operators/Plus.as" afterPath="$PROJECT_DIR$/CalcModule/src/Commands/Operators/Plus.as" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CalcModule/src/TextButton.as" afterPath="$PROJECT_DIR$/CalcModule/src/Views/TextButton.as" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CalcModule/tests/Models/Operators/OperatorFactoryTest.as" afterPath="$PROJECT_DIR$/CalcModule/tests/Commands/Operators/OperatorFactoryTest.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CalcModule/CalcModule.iml" afterPath="$PROJECT_DIR$/CalcModule/CalcModule.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CalcModule/src/Views/Calculator.as" afterPath="$PROJECT_DIR$/CalcModule/src/Views/Calculator.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CalcModule/src/Contexts/CalculatorContext.as" afterPath="$PROJECT_DIR$/CalcModule/src/Contexts/CalculatorContext.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CalcModule/tests/CalculatorTest.as" afterPath="$PROJECT_DIR$/CalcModule/tests/CalculatorTest.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CalcModule/src/Main.as" afterPath="$PROJECT_DIR$/CalcModule/src/Main.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CalcModule/src/Events/NumberEvent.as" afterPath="$PROJECT_DIR$/CalcModule/src/Events/NumberEvent.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CalcModule/src/Events/OperatorEvent.as" afterPath="$PROJECT_DIR$/CalcModule/src/Events/OperatorEvent.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CalcModule/src/Mediators/OperatorMediator.as" afterPath="$PROJECT_DIR$/CalcModule/src/Mediators/OperatorMediator.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CalcModule/src/Events/OperatorPressedEvent.as" afterPath="$PROJECT_DIR$/CalcModule/src/Events/OperatorPressedEvent.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CalcModule/src/Events/UpdateTextEvent.as" afterPath="$PROJECT_DIR$/CalcModule/src/Events/UpdateTextEvent.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Calculator.iws" />
@@ -49,70 +58,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="OperatorController.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CalcModule/src/Commands/OperatorController.as">
+      <file leaf-file-name="ICalcTextView.as" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CalcModule/src/Views/ICalcTextView.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-              <folding>
-                <element signature="e#66#94#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NumberCommand.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CalcModule/src/Commands/NumberCommand.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-              <folding>
-                <element signature="e#66#92#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OperatorMediator.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CalcModule/src/Mediators/OperatorMediator.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="12" max-vertical-offset="945">
-              <caret line="55" column="50" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
-              <folding>
-                <element signature="e#67#95#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Calculator.as" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CalcModule/src/Views/Calculator.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5681063" vertical-offset="162" max-vertical-offset="1065">
-              <caret line="45" column="45" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#63#96#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OperatorEvent.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CalcModule/src/Events/OperatorEvent.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NumberEvent.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CalcModule/src/Events/NumberEvent.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.016611295" vertical-offset="0" max-vertical-offset="903">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -142,7 +92,6 @@
         <option value="$PROJECT_DIR$/CalcModule/src/Operators/Multiply.as" />
         <option value="$PROJECT_DIR$/CalcModule/tests/CalculatorTest.as" />
         <option value="$PROJECT_DIR$/CalcModule/src/Operators/Plus.as" />
-        <option value="$PROJECT_DIR$/CalcModule/src/Main.as" />
         <option value="$PROJECT_DIR$/CalcModule/src/Operators/OperatorFactory.as" />
         <option value="$PROJECT_DIR$/CalcModule/src/Calculator.as" />
         <option value="$PROJECT_DIR$/CalcModule/src/commands/PlusCommand.as" />
@@ -152,21 +101,34 @@
         <option value="$PROJECT_DIR$/CalcModule/src/Model/OperationModel.as" />
         <option value="$PROJECT_DIR$/CalcModule/src/Commands/PlusController.as" />
         <option value="$PROJECT_DIR$/CalcModule/src/Commands/OperationController.as" />
+        <option value="$PROJECT_DIR$/CalcModule/src/Mediators/NumberMediator.as" />
+        <option value="$PROJECT_DIR$/CalcModule/src/Models/IOperatorModel.as" />
+        <option value="$PROJECT_DIR$/CalcModule/src/Views/CalculatorView.as" />
+        <option value="$PROJECT_DIR$/CalcModule/src/Main.as" />
         <option value="$PROJECT_DIR$/CalcModule/src/Contexts/CalculatorContext.as" />
-        <option value="$PROJECT_DIR$/CalcModule/src/Commands/OperatorController.as" />
-        <option value="$PROJECT_DIR$/CalcModule/src/Commands/NumberCommand.as" />
+        <option value="$PROJECT_DIR$/CalcModule/src/Views/Calculator.as" />
+        <option value="$PROJECT_DIR$/CalcModule/src/Views/NumbersView.as" />
+        <option value="$PROJECT_DIR$/CalcModule/src/Views/OperatorsView.as" />
+        <option value="$PROJECT_DIR$/CalcModule/src/Mediators/TextMediator.as" />
+        <option value="$PROJECT_DIR$/CalcModule/src/Contexts/CalculatorConfig.as" />
         <option value="$PROJECT_DIR$/CalcModule/src/Events/NumberEvent.as" />
+        <option value="$PROJECT_DIR$/CalcModule/src/Events/NumberPressedEvent.as" />
         <option value="$PROJECT_DIR$/CalcModule/src/Events/OperatorEvent.as" />
         <option value="$PROJECT_DIR$/CalcModule/src/Events/OperatorPressedEvent.as" />
         <option value="$PROJECT_DIR$/CalcModule/src/Events/UpdateTextEvent.as" />
+        <option value="$PROJECT_DIR$/CalcModule/src/Models/CalculatorModel.as" />
+        <option value="$PROJECT_DIR$/CalcModule/src/Views/CalcTextView.as" />
+        <option value="$PROJECT_DIR$/CalcModule/src/Commands/OperatorController.as" />
         <option value="$PROJECT_DIR$/CalcModule/src/Mediators/OperatorMediator.as" />
-        <option value="$PROJECT_DIR$/CalcModule/src/Views/Calculator.as" />
+        <option value="$PROJECT_DIR$/CalcModule/tests/Commands/Operators/OperatorFactoryTest.as" />
+        <option value="$PROJECT_DIR$/CalcModule/src/Commands/NumberCommand.as" />
+        <option value="$PROJECT_DIR$/CalcModule/src/Views/ICalcTextView.as" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="998" />
-    <option name="y" value="156" />
+    <option name="x" value="736" />
+    <option name="y" value="121" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -198,8 +160,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -229,46 +191,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CalcModule" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Calculator" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CalcModule" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Calculator" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CalcModule" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Operators" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -433,7 +355,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="fileTemplates" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -468,11 +390,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
-      <recent name="Events" />
+      <recent name="Views" />
       <recent name="Mediators" />
       <recent name="Contexts" />
+      <recent name="Events" />
       <recent name="Commands" />
-      <recent name="Model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CalcModule/src/Views" />
+      <recent name="$PROJECT_DIR$/CalcModule/src/Models" />
+    </key>
+    <key name="JSExtractSuperBase.RECENT_KEYS">
+      <recent name="Views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CalcModule/src/Views" />
@@ -790,7 +719,9 @@
       <option name="screenWidth" value="0" />
       <option name="url" value="http://" />
       <option name="usbDebugPort" value="7936" />
+      <RunnerSettings RunnerId="FlexDebugRunner" />
       <RunnerSettings RunnerId="FlexRunner" />
+      <ConfigurationWrapper RunnerId="FlexDebugRunner" />
       <ConfigurationWrapper RunnerId="FlexRunner" />
       <method />
     </configuration>
@@ -837,24 +768,27 @@
       <workItem from="1408463005271" duration="524000" />
       <workItem from="1408463568252" duration="1325000" />
       <workItem from="1408522751319" duration="21326000" />
+      <workItem from="1408608468317" duration="5926000" />
+      <workItem from="1408615347982" duration="5544000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23175000" />
+    <option name="totallyTimeSpent" value="34645000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="998" y="156" width="1400" height="1000" extended-state="0" />
-    <editor active="false" />
+    <frame x="736" y="121" width="1400" height="1000" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957035" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -871,7 +805,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -899,13 +832,105 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Views/Calculator.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Contexts/CalculatorContext.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="420">
+          <caret line="18" column="60" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Contexts/CalculatorConfig.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="960">
+          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+          <folding>
+            <element signature="e#65#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Main.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="420">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Mediators/TextMediator.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="525">
+          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+          <folding>
+            <element signature="e#66#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Commands/OperatorController.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Commands/NumberCommand.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="645">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="e#109#135#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Mediators/OperatorMediator.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="825" max-vertical-offset="975">
+          <caret line="55" column="50" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Views/Calculator.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1065">
+          <caret line="45" column="45" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Events/OperatorEvent.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="405">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Events/NumberEvent.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="405">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CalcModule/src/Main.as">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="375">
           <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="e#11#35#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -915,7 +940,7 @@
           <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#57#90#0" expanded="true" />
+            <element signature="e#57#92#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -924,9 +949,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="375">
           <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="e#11#35#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -936,7 +959,7 @@
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#57#90#0" expanded="true" />
+            <element signature="e#57#92#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -945,9 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="903">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -955,11 +975,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/src/Models/Operators/Operator.as">
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Commands/Operators/Operator.as">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08305648" vertical-offset="0" max-vertical-offset="903">
           <caret line="5" column="30" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="30" />
@@ -969,7 +988,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/src/Models/Operators/Divide.as">
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Commands/Operators/Divide.as">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12583892" vertical-offset="0" max-vertical-offset="596">
           <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
@@ -979,17 +998,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/src/Models/Operators/Multiply.as">
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Commands/Operators/Multiply.as">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10067114" vertical-offset="0" max-vertical-offset="596">
           <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/src/Models/Operators/Minus.as">
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Commands/Operators/Minus.as">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30201343" vertical-offset="0" max-vertical-offset="596">
           <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="18" selection-end-column="17" />
@@ -999,7 +1015,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/src/Models/Operators/Plus.as">
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Commands/Operators/Plus.as">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37751678" vertical-offset="0" max-vertical-offset="596">
           <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
@@ -1007,7 +1023,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/src/Models/Operators/Equals.as">
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Commands/Operators/Equals.as">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="903">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1017,7 +1033,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/src/Models/Operators/Numeric.as">
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Commands/Operators/Numeric.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="880">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Mediators/NumberMediator.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11627907" vertical-offset="0" max-vertical-offset="903">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+          <folding>
+            <element signature="e#66#92#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Views/TextButton.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="903">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Main.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Views/INumbersView.as">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="880">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1027,48 +1075,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/src/Models/Operators/OperatorFactory.as">
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Events/OperatorEvent.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49833888" vertical-offset="0" max-vertical-offset="903">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/tests/Models/Operators/OperatorFactoryTest.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6312292" vertical-offset="0" max-vertical-offset="903">
-          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.53672314" vertical-offset="0" max-vertical-offset="531">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/tests/CalculatorTest.as">
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Events/OperatorPressedEvent.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28977272" vertical-offset="0" max-vertical-offset="1335">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5084746" vertical-offset="0" max-vertical-offset="531">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Views/NumbersView.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="159" max-vertical-offset="690">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#57#90#0" expanded="true" />
+            <element signature="e#62#95#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/src/Main.as">
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Events/NumberPressedEvent.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21594684" vertical-offset="0" max-vertical-offset="903">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.6496063" vertical-offset="0" max-vertical-offset="508">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Contexts/CalculatorConfig.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7457627" vertical-offset="339" max-vertical-offset="870">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
           <folding>
-            <element signature="e#11#35#0" expanded="true" />
+            <element signature="e#65#95#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/src/TextButton.as">
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Events/UpdateTextEvent.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36723164" vertical-offset="0" max-vertical-offset="531">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Models/CalculatorModel.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53156143" vertical-offset="0" max-vertical-offset="903">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Views/Calculator.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14950167" vertical-offset="0" max-vertical-offset="903">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Views/IOperatorsView.as">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="903">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Mediators/OperatorMediator.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44850498" vertical-offset="0" max-vertical-offset="903">
+          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/MouseTrailer.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2310">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -1076,94 +1171,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/src/Contexts/CalculatorContext.as">
+    <entry file="file://$PROJECT_DIR$/CalcModule/tests/CalculatorTest.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21594684" vertical-offset="0" max-vertical-offset="903">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.7641196" vertical-offset="0" max-vertical-offset="1335">
+          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
           <folding>
-            <element signature="e#66#110#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#57#92#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/src/Models/OperatorModel.as">
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Commands/Operators/OperatorFactory.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09966777" vertical-offset="0" max-vertical-offset="903">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.48172757" vertical-offset="0" max-vertical-offset="903">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/src/Events/UpdateTextEvent.as">
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Mediators/TextMediator.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13289036" vertical-offset="0" max-vertical-offset="903">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/src/Events/OperatorPressedEvent.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14950167" vertical-offset="0" max-vertical-offset="903">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding />
+        <state vertical-scroll-proportion="0.3986711" vertical-offset="0" max-vertical-offset="903">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="e#66#96#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CalcModule/src/Commands/OperatorController.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#66#94#0" expanded="true" />
+            <element signature="e#20#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/src/Events/OperatorEvent.as">
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Commands/NumberCommand.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.016611295" vertical-offset="0" max-vertical-offset="903">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding>
+            <element signature="e#65#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/tests/Commands/Operators/OperatorFactoryTest.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.016611295" vertical-offset="0" max-vertical-offset="903">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Views/OperatorsView.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4152824" vertical-offset="0" max-vertical-offset="903">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CalcModule/src/Events/NumberEvent.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.049833886" vertical-offset="0" max-vertical-offset="903">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/src/Commands/NumberCommand.as">
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Views/CalcTextView.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="e#66#92#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.19933555" vertical-offset="0" max-vertical-offset="903">
+          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/src/Mediators/OperatorMediator.as">
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Contexts/CalculatorContext.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="12" max-vertical-offset="945">
-          <caret line="55" column="50" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
-          <folding>
-            <element signature="e#67#95#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.14950167" vertical-offset="0" max-vertical-offset="903">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalcModule/src/Views/Calculator.as">
+    <entry file="file://$PROJECT_DIR$/CalcModule/src/Views/ICalcTextView.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5681063" vertical-offset="162" max-vertical-offset="1065">
-          <caret line="45" column="45" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#63#96#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.016611295" vertical-offset="0" max-vertical-offset="903">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1219,12 +1320,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>CalcModule</last-edited>
+          <last-edited>CalcModule|CalcModule</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -2,9 +2,9 @@
  * @Author: Jakub Pudelek, Plumbee Ltd
  */
 package {
-import Models.Operators.Operator;
-import Models.Operators.OperatorFactory;
-import Models.Operators.SqrRt;
+import Commands.Operators.Operator;
+import Commands.Operators.OperatorFactory;
+import Commands.Operators.SqrRt;
 
 import org.flexunit.asserts.assertEquals;
 

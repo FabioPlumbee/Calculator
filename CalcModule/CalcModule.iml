@@ -9,7 +9,7 @@
               <dependency linkage="Test" />
             </entry>
             <entry library-id="36d59eb7-132c-4315-9f39-d52ad1c9fb42">
-              <dependency linkage="External" />
+              <dependency linkage="Include" />
             </entry>
           </entries>
           <sdk name="flex_sdk_4" />

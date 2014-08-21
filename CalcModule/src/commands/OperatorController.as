@@ -1,28 +1,24 @@
-/**
- * @Author: Jakub Pudelek, Plumbee Ltd
- */
+
 package Commands {
 import Events.OperatorEvent;
 import Events.UpdateTextEvent;
 
-import Models.OperatorModel;
+import Models.CalculatorModel;
 
-import Models.Operators.Operator;
+import Commands.Operators.Operator;
 
-import Models.Operators.OperatorFactory;
+import Commands.Operators.OperatorFactory;
 
 import flash.events.IEventDispatcher;
 
 import robotlegs.bender.bundles.mvcs.Command;
 
 public class OperatorController extends Command {
-    private var _op:int = OperatorFactory.PLUS;
-
     [Inject]
     public var operatorEvent:OperatorEvent;
 
     [Inject]
-    public var model:OperatorModel;
+    public var model:CalculatorModel;
 
     [Inject]
     public var eventDispatcher:IEventDispatcher;
@@ -33,16 +29,20 @@ public class OperatorController extends Command {
         model.curNumber = doOperation();
         model.numberToShow = model.curNumber;
         model.lastNumber = model.curNumber;
-        if (op != OperatorFactory.EQUALS)
+
+        if (op != OperatorFactory.EQUALS) {
+            model.useResult = false;
             model.curNumber = 0;
+        }
         else
-            model.lastOpWasEquals = false;
-        this._op = op;
+            model.useResult = true;
+
+        model.op = op;
         eventDispatcher.dispatchEvent(new UpdateTextEvent());
     }
 
     private function doOperation():Number {
-        var operator:Operator = OperatorFactory.createOperator(_op,OperatorFactory.createNumber(model.lastNumber),OperatorFactory.createNumber(model.curNumber));
+        var operator:Operator = OperatorFactory.createOperator(model.op,OperatorFactory.createNumber(model.lastNumber),OperatorFactory.createNumber(model.curNumber));
 
         return operator.Execute();
     }

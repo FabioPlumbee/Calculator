@@ -1,11 +1,13 @@
 /**
- * @Author: Jakub Pudelek, Plumbee Ltd
+ * @Author: Fabio Barata, Plumbee Ltd
  */
 package Commands {
+import Commands.Operators.OperatorFactory;
+
 import Events.NumberEvent;
 import Events.UpdateTextEvent;
 
-import Models.OperatorModel;
+import Models.CalculatorModel;
 
 import flash.events.IEventDispatcher;
 
@@ -16,7 +18,7 @@ public class NumberCommand extends Command {
     public var numberEvent:NumberEvent;
 
     [Inject]
-    public var model:OperatorModel;
+    public var model:CalculatorModel;
 
     [Inject]
     public var eventDispatcher:IEventDispatcher;
@@ -24,12 +26,16 @@ public class NumberCommand extends Command {
     override public function execute():void {
         var n:Number = numberEvent.number;
 
-        if (model.lastOpWasEquals) {
+        if (model.useResult) {
             model.curNumber = n;
-            model.lastOpWasEquals = false;
+            model.lastNumber = 0;
+            model.op = OperatorFactory.PLUS;
+            model.useResult = false;
         }
         else
             model.curNumber = 10*model.curNumber+n;
+
+        model.numberToShow = model.curNumber;
 
         eventDispatcher.dispatchEvent(new UpdateTextEvent());
     }

@@ -1,5 +1,5 @@
 /**
- * @Author: Jakub Pudelek, Plumbee Ltd
+ * @Author: Fabio Barata, Plumbee Ltd
  */
 package Events {
 import flash.events.Event;
@@ -9,6 +9,11 @@ public class UpdateTextEvent extends Event {
 
     public function UpdateTextEvent() {
         super(eventType);
+    }
+
+    override public function clone() : Event
+    {
+        return new UpdateTextEvent();
     }
 }
 }
