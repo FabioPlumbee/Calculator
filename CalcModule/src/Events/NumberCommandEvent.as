@@ -4,12 +4,12 @@
 package Events {
 import flash.events.Event;
 
-public class NumberEvent extends Event {
+public class NumberCommandEvent extends Event {
     private var _number:int = 0;
 
     public static const eventType:String = "NumberCommand";
 
-    public function NumberEvent(number:int) {
+    public function NumberCommandEvent(number:int) {
         super(eventType);
         this._number = number;
     }
@@ -20,7 +20,7 @@ public class NumberEvent extends Event {
 
     override public function clone() : Event
     {
-        return new NumberEvent(number);
+        return new NumberCommandEvent(number);
     }
 }
 }

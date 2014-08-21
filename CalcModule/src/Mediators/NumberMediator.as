@@ -2,7 +2,7 @@
  * @Author: Fabio Barata, Plumbee Ltd
  */
 package Mediators {
-import Events.NumberEvent;
+import Events.NumberCommandEvent;
 import Events.NumberPressedEvent;
 
 import robotlegs.bender.bundles.mvcs.Mediator;
@@ -13,7 +13,7 @@ public class NumberMediator extends Mediator {
     }
 
     public function onNumberPressed(event:NumberPressedEvent):void {
-        dispatch(new NumberEvent(event.number));
+        dispatch(new NumberCommandEvent(event.number));
     }
 }
 }

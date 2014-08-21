@@ -4,7 +4,7 @@
 package Commands {
 import Commands.Operators.OperatorFactory;
 
-import Events.NumberEvent;
+import Events.NumberCommandEvent;
 import Events.UpdateTextEvent;
 
 import Models.CalculatorModel;
@@ -15,7 +15,7 @@ import robotlegs.bender.bundles.mvcs.Command;
 
 public class NumberCommand extends Command {
     [Inject]
-    public var numberEvent:NumberEvent;
+    public var numberEvent:NumberCommandEvent;
 
     [Inject]
     public var model:CalculatorModel;

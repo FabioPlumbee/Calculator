@@ -2,9 +2,9 @@
  * @Author: Fabio Barata, Plumbee Ltd
  */
 package Mediators {
-import Events.NumberEvent;
+import Events.NumberCommandEvent;
 import Events.NumberPressedEvent;
-import Events.OperatorEvent;
+import Events.OperatorCommandEvent;
 import Events.OperatorPressedEvent;
 
 import Commands.Operators.OperatorFactory;
@@ -23,23 +23,23 @@ public class OperatorMediator extends Mediator {
     }
 
     public function onNumberPressed(event:NumberPressedEvent):void {
-        dispatch(new NumberEvent(event.number));
+        dispatch(new NumberCommandEvent(event.number));
     }
 
     public function onPlusPressed(event:Event):void {
-        dispatch(new OperatorEvent(OperatorFactory.PLUS));
+        dispatch(new OperatorCommandEvent(OperatorFactory.PLUS));
     }
     public function onMinusPressed(event:Event):void {
-        dispatch(new OperatorEvent(OperatorFactory.MINUS));
+        dispatch(new OperatorCommandEvent(OperatorFactory.MINUS));
     }
     public function onMultPressed(event:Event):void {
-        dispatch(new OperatorEvent(OperatorFactory.MULTIPLY));
+        dispatch(new OperatorCommandEvent(OperatorFactory.MULTIPLY));
     }
     public function onDivPressed(event:Event):void {
-        dispatch(new OperatorEvent(OperatorFactory.DIVIDE));
+        dispatch(new OperatorCommandEvent(OperatorFactory.DIVIDE));
     }
     public function onEqualsPressed(event:Event):void {
-        dispatch(new OperatorEvent(OperatorFactory.EQUALS));
+        dispatch(new OperatorCommandEvent(OperatorFactory.EQUALS));
     }
 }
 }

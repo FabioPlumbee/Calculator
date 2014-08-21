@@ -4,12 +4,12 @@
 package Events {
 import flash.events.Event;
 
-public class OperatorEvent extends Event {
+public class OperatorCommandEvent extends Event {
     private var _op:int;
 
     public static const eventType:String = "OperatorCommand";
 
-    public function OperatorEvent(op:int) {
+    public function OperatorCommandEvent(op:int) {
         super(eventType);
         _op = op;
     }
@@ -20,7 +20,7 @@ public class OperatorEvent extends Event {
 
     override public function clone() : Event
     {
-        return new OperatorEvent(_op);
+        return new OperatorCommandEvent(_op);
     }
 }
 }

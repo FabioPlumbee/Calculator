@@ -3,10 +3,10 @@
  */
 package Contexts {
 import Commands.NumberCommand;
-import Commands.OperatorController;
+import Commands.OperatorCommand;
 
-import Events.NumberEvent;
-import Events.OperatorEvent;
+import Events.NumberCommandEvent;
+import Events.OperatorCommandEvent;
 
 import Mediators.NumberMediator;
 import Mediators.OperatorMediator;
@@ -47,8 +47,8 @@ public class CalculatorConfig implements IConfig {
         mediatorMap.map(INumbersView).toMediator(NumberMediator);
         mediatorMap.map(ICalcTextView).toMediator(TextMediator);
 
-        commandMap.map(NumberEvent.eventType,NumberEvent).toCommand(NumberCommand);
-        commandMap.map(OperatorEvent.eventType,OperatorEvent).toCommand(OperatorController);
+        commandMap.map(NumberCommandEvent.eventType,NumberCommandEvent).toCommand(NumberCommand);
+        commandMap.map(OperatorCommandEvent.eventType,OperatorCommandEvent).toCommand(OperatorCommand);
     }
 }
 }

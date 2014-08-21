@@ -1,6 +1,6 @@
 
 package Commands {
-import Events.OperatorEvent;
+import Events.OperatorCommandEvent;
 import Events.UpdateTextEvent;
 
 import Models.CalculatorModel;
@@ -13,9 +13,9 @@ import flash.events.IEventDispatcher;
 
 import robotlegs.bender.bundles.mvcs.Command;
 
-public class OperatorController extends Command {
+public class OperatorCommand extends Command {
     [Inject]
-    public var operatorEvent:OperatorEvent;
+    public var operatorEvent:OperatorCommandEvent;
 
     [Inject]
     public var model:CalculatorModel;
